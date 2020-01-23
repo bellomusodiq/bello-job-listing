@@ -1,0 +1,109 @@
+.HeaderContainer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(19, 66, 104);
+    color: #fff;
+    box-shadow: 1px 2px 3px 5px rgb(228, 228, 228);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 19;
+}
+.Header {
+    width: 95%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.Logo {
+    width: 2%;
+}
+.Search {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.Search > input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px 30px 15px 15px;
+    border-radius: 30px;
+    /* font-size: 1.3em; */
+    background-color: rgb(11, 47, 77);
+    color: #f1f1f1;
+}
+.Search > i {
+    /* position: relative; */
+    margin-left: -25px;
+}
+.NavItems {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.EmailAccounts {
+    display: flex;
+    justify-content: space-between;
+    width: 7%;
+    padding: 10px 0;
+    align-items: center;
+    box-sizing: border-box;
+}
+.EmailAccounts > div {
+    height: 25px;
+    /* width: 25px; */
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.EmailAccounts > div > div {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 5px;
+    box-sizing: border-box;
+}
+.MenuButton {
+    display: none;
+}
+@media screen and (max-width: 800px) {
+    .NavItems {
+        display: none;
+    }
+    .Search {
+        width: 40%;
+    }
+    .EmailAccounts {
+        width: 15%;
+    }
+    .MenuButton {
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+        width: 50px;
+        justify-content: space-around;
+    }
+    .MenuButton > div {
+        background-color: #fff;
+        height: 2px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .Search {
+        display: none;
+    }
+    .Header {
+        justify-content: space-between;
+    }
+    .EmailAccounts {
+        width: 30%;
+    }
+}

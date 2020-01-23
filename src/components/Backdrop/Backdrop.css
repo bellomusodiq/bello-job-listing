@@ -1,0 +1,11 @@
+.Backdrop {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 19;
+    opacity: .8;
+    position: fixed;
+    top: 0;
+    left: 0;
+}

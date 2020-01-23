@@ -1,0 +1,35 @@
+.DashboardSideNav {
+    width: 20%;
+    /* height: calc(100vw - 100px); */
+    top: 100px;
+    left: 0;
+    overflow-y: auto;
+}
+.NameActive {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.Name {
+    display: flex;
+    flex-direction: column;
+}
+.Name > h3 {
+    margin: 0;
+}
+.Name > p {
+    margin: 0;
+    margin-top: 5px;
+    color: #101010;
+}
+.NameActive > span {
+    padding: 5px 15px;
+    background-color: rgb(22, 146, 28);
+    color: #fff;
+}
+@media screen and (max-width: 800px) {
+    .DashboardSideNav {
+        display: none;
+    }
+}

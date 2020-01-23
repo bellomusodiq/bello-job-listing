@@ -1,0 +1,31 @@
+.FooterContainer {
+    width: 100%;
+    background-color: rgb(19, 66, 104);
+    padding: 50px;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+.Footer {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    box-sizing: border-box;
+}
+.Footer > div {
+    width: calc(100% / 5);
+}
+.Copyright {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 100px;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 500px) {
+    .Footer {
+        flex-direction: column;
+    }
+    .Footer > div {
+        width: 100%;
+    }
+}

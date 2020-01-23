@@ -1,0 +1,244 @@
+.Recruiter {
+    display: flex;
+}
+.Body {
+    background-color: #fff;
+    margin-right: 4%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px 40px;
+}
+.RecruiterHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Tabs {
+    display: flex;
+}
+.TabItem {
+    margin-right: 35px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.TabItem > .Line {
+    height: 3px;
+    width: 100%;
+    /* flex: 1; */
+    background-color: rgb(19, 66, 104);
+    margin-top:10px;
+}
+.Hr {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+    margin-top: -3px;
+}
+.Profile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.ImageInformation {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+}
+.Image {
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+    border-radius: 50%;
+    margin-right: 5%;
+    box-sizing: border-box;
+}
+.Information {
+    width: 100%;
+    box-sizing: border-box;
+    flex: 1;
+}
+.Name {
+    margin: 0;
+    margin-bottom: 5px;
+}
+.Information > div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 20px 0;
+}
+.Others {
+    width: 50%;
+}
+.KeyValue {
+    display: flex;
+    margin-bottom: 10px;
+}
+.Key {
+    font-weight: bold;
+    width: 40%;
+}
+.Value {
+    flex: 1;
+}
+a.Value {
+    color: rgb(51, 183, 235);
+}
+.Crumbs {
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+.LeftRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+.Left {
+    width: calc(5% + 100px);
+    box-sizing: border-box;
+}
+.Left > h3 {
+    margin-top: 0;
+}
+.Right {
+    /* width: 100%; */
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.Right > div {
+    margin-top: 5px;
+}
+.Crumbs {
+    margin-right: 20px;
+}
+.Companies {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
+.Companies > div {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: skyblue;
+    margin-right: 50px;
+}
+.CompanyFollowing {
+    display: flex;
+}
+.CompanyFollowing > div {
+    width: 50%;
+}
+.CompanyFollowing > div > div {
+    display: flex;
+}
+.CompanyFollowing > div > div > div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: skyblue;
+    margin-right: 10px;
+}
+.OthersCandidate {
+    width: 100%;
+}
+.OthersCandidate > .KeyValue > .Key {
+    width: 25%;
+}
+.OthersCandidate > .KeyValue > .Value {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.OthersCandidate > .KeyValue .Crumbs {
+    margin-bottom: 5px;
+}
+.KeyValueCandidate {
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.KeyCandidate {
+    width: 15%;
+}
+.KeyCandidate > h3 {
+    margin: 0;
+}
+.ValueCandidate {
+    flex: 1;
+    display: flex;
+}
+.Legend {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.Legend  > div > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+.Legend > div > div > div {
+    padding: 5px 15px;
+    background-color: lightgray;
+    margin-right: 5px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.ExperienceContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.Experience {
+    padding: 5px 15px;
+    border-radius: 50px;
+    border: 1px solid black;
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 800px) {
+    .Recruiter {
+        width: 100%;
+    }
+    .Body {
+        margin: auto;
+        width: 95%;
+        box-sizing: border-box;
+        padding: 2%;
+    }
+    .Companies > div {
+        width: 50px;
+        height: 50px;
+        margin-right: 5px;
+    }
+    .CompanyFollowing {
+        flex-direction: column;
+    }
+    .CompanyFollowing > div {
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+@media screen and (max-width: 500px) {
+    .KeyValueCandidate {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .ValueCandidate {
+        flex-direction: column;
+    }
+    .ExperienceContainer {
+        flex-direction: row;
+    }
+    .KeyCandidate {
+        margin-bottom: 10px;
+    }
+}
